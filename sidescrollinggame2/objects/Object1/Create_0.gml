@@ -12,7 +12,7 @@ canDash = false;
 dashDistance = 250;
 dashTime = 7;
 
-time = 5;
+timer = 5;
 my_tilemap = layer_tilemap_get_id("groundtiles");
 
 StateFree = function()
