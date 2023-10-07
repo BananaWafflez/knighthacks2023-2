@@ -35,8 +35,10 @@
   },
   "resources": [
     {"id":{"name":"TileSet8","path":"tilesets/TileSet8/TileSet8.yy",},},
+    {"id":{"name":"Sprite10","path":"sprites/Sprite10/Sprite10.yy",},},
     {"id":{"name":"TileSet7","path":"tilesets/TileSet7/TileSet7.yy",},},
     {"id":{"name":"TileSet6","path":"tilesets/TileSet6/TileSet6.yy",},},
+    {"id":{"name":"speedboost","path":"objects/speedboost/speedboost.yy",},},
     {"id":{"name":"Sprite6","path":"sprites/Sprite6/Sprite6.yy",},},
     {"id":{"name":"Sprite7","path":"sprites/Sprite7/Sprite7.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},

@@ -17,7 +17,9 @@
   ],
   "ResourceOrderSettings": [
     {"name":"TileSet8","order":2,"path":"tilesets/TileSet8/TileSet8.yy",},
+    {"name":"Sprite10","order":2,"path":"sprites/Sprite10/Sprite10.yy",},
     {"name":"TileSet6","order":3,"path":"tilesets/TileSet6/TileSet6.yy",},
+    {"name":"speedboost","order":1,"path":"objects/speedboost/speedboost.yy",},
     {"name":"Sprite6","order":2,"path":"sprites/Sprite6/Sprite6.yy",},
     {"name":"Sprite7","order":1,"path":"sprites/Sprite7/Sprite7.yy",},
     {"name":"Sprite1","order":4,"path":"sprites/Sprite1/Sprite1.yy",},

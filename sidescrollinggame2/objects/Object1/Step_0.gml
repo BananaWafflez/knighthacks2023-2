@@ -7,4 +7,13 @@ keyJump = keyboard_check_pressed(vk_up);
 keyUp = keyboard_check(vk_space);
 keyDown = keyboard_check(vk_down);
 keyDash = keyboard_check_pressed(vk_shift);
+
+
 state();
+if(move_speed == 26){
+	time -= delta_time / 1000000;
+	
+	if(time <= 0){
+		move_speed = 6;
+	}
+}
