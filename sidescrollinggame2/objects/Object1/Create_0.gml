@@ -9,8 +9,8 @@ move_x = 0;
 move_y = 0;
 
 canDash = false;
-dashDistance = 180;
-dashTime = 8;
+dashDistance = 250;
+dashTime = 7;
 
 my_tilemap = layer_tilemap_get_id("groundtiles");
 
