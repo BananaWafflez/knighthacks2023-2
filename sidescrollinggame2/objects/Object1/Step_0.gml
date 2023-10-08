@@ -10,14 +10,3 @@ keyDash = keyboard_check_pressed(vk_shift);
 
 
 state();
-/*
-if(move_speed == 26){
-	timer -= delta_time / 1000000;
-	
-	if(timer <= 0){
-		move_speed = 6;
-		
-		
-	}
-}
-*/

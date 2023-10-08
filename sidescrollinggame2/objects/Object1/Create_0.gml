@@ -3,7 +3,9 @@
 
 
 move_speed = 6;
-jump_speed = 16;
+jump_speed = 20;
+current_jumps = 0;
+max_jumps = 2;
 
 move_x = 0;
 move_y = 0;
@@ -15,8 +17,7 @@ dashTime = 7;
 timer = 5;
 my_tilemap = layer_tilemap_get_id("groundtiles");
 
-StateFree = function()
-{
+StateFree = function(){
 	move_x = (keyRight - keyLeft) * move_speed;
 
 	if (canDash) && (keyDash){
@@ -27,19 +28,22 @@ StateFree = function()
 		dashEnergy = dashDistance;
 		state = StateDash;
 	}
-	if(place_meeting(x, y+2, my_tilemap))
-	{
-		move_y = 0;
 	
-		if (keyboard_check(vk_up)) {
-			move_y = -jump_speed;
+	if(place_meeting(x, y+1, my_tilemap))
+	{
+		current_jumps = 0;
+		move_y = 0;
+	}else if(current_jumps == 0)
+		{
+			current_jumps = 1;
 		}
-	} else{
-		if(move_y < 10) {
-		
-			move_y += 1;
-		}
-	}
+	
+		if (keyJump) && (current_jumps <= max_jumps) {
+				current_jumps += 1;
+				move_y = -jump_speed;
+			} else if(move_y < 10) {
+				move_y += 1;
+			}
 	canDash = true;
 
 	move_and_collide(move_x, move_y, my_tilemap);
@@ -47,20 +51,31 @@ StateFree = function()
 	if(move_x != 0) {
 		image_xscale = sign(move_x);
 		image_speed  = 1;
+		}
+
 	}
 
-}
 StateDash = function(){
 	move_x = lengthdir_x(dashSp, dashDirection);
 	move_y = lengthdir_y(dashSp, dashDirection);
 	if(place_meeting(x, y+2, my_tilemap))
 		{
 			move_y = 0;
+			current_jumps = 0;
 	
 			if (keyboard_check(vk_up)) {
 				move_y = -jump_speed;
 			}
 		} else{
+			if(move_y < 10) {
+		
+				move_y += 1;
+			}
+		}
+		if (keyJump) && (current_jumps < max_jumps) {
+				current_jumps += 1;
+				move_y = -jump_speed;
+			} else{
 			if(move_y < 10) {
 		
 				move_y += 1;
@@ -81,5 +96,5 @@ StateDash = function(){
 			state = StateFree;
 		}
 }
-state = StateFree;
 
+state = StateFree;

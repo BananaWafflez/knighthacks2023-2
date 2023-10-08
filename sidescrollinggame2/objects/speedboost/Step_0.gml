@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-show_debug_message(instance_exists(speedboost))
+
 if(place_meeting(x, y, Object1)){
 	if(visible = 1){
 		Object1.move_speed += speed_boost;
