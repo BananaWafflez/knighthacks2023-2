@@ -31,7 +31,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.106",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"TileSet8","path":"tilesets/TileSet8/TileSet8.yy",},},
@@ -40,6 +40,7 @@
     {"id":{"name":"TileSet6","path":"tilesets/TileSet6/TileSet6.yy",},},
     {"id":{"name":"attack_hitbox","path":"objects/attack_hitbox/attack_hitbox.yy",},},
     {"id":{"name":"speedboost","path":"objects/speedboost/speedboost.yy",},},
+    {"id":{"name":"enemy","path":"objects/enemy/enemy.yy",},},
     {"id":{"name":"Sprite6","path":"sprites/Sprite6/Sprite6.yy",},},
     {"id":{"name":"Sprite7","path":"sprites/Sprite7/Sprite7.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
@@ -54,6 +55,7 @@
     {"id":{"name":"Sprite8","path":"sprites/Sprite8/Sprite8.yy",},},
     {"id":{"name":"TileSet4","path":"tilesets/TileSet4/TileSet4.yy",},},
     {"id":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},},
+    {"id":{"name":"Sprite12","path":"sprites/Sprite12/Sprite12.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
