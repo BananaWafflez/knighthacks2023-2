@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "sidescrollinggame2",
+    "path": "sidescrollinggame2.yyp",
   },
   "parentObjectId": null,
   "persistent": false,

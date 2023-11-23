@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 show_debug_message("Delay timer: " + string(delay));
-
+state();
 if(healthbar == 0){
  visible = 0;
 }
